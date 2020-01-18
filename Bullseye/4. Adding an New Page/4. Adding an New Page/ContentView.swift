@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  3. Styling
+//  4. Adding an New Page
 //
-//  Created by dopamine100 on 2020/01/16.
+//  Created by dopamine100 on 2020/01/18.
 //  Copyright © 2020 Mr.Uruoi. All rights reserved.
 //
 
@@ -113,7 +113,7 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                Button(action: {}) {
+                NavigationLink(destination: AboutView()) {
                     HStack {
                         Image("InfoIcon")
                         Text("Info").modifier(ButtonStyle())
@@ -125,7 +125,7 @@ struct ContentView: View {
         } // VStack
             .background(Image("Background"), alignment: .center)
             .accentColor(midnightBlue)
-        
+            .navigationBarTitle("Bullseye")
     } // body
     
     
@@ -150,4 +150,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView().previewLayout(.fixed(width: 896, height: 414))
     }
 }
-
